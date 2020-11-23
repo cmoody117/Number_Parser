@@ -1,3 +1,5 @@
+#Instructions - Run the NumberParser.py file, which will then prompt you to enter the location and name of the text file you wish to transform.
+
 #General design points 
 #Kept modular - allows us to come back and re-write/add to easily, and allows same lines to be re-used multiple times. 
 #Try-catches are employed, and feature descriptive error messages - these should allow users to pinpoint where errors are coming from.
