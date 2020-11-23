@@ -113,7 +113,7 @@ dict_teen = {'10': 'ten', '11': 'eleven','12': 'twelve', '13': 'thirteen','14': 
 dict_10 = {'0': '', '2': 'twenty', '3': 'thirty','4': 'fourty','5': 'fifty','6':'sixty', '7':'seventy','8':'eighty','9':'ninety'}  
 dict_digit = {'0': '', '1': 'one','2': 'two', '3': 'three','4': 'four','5': 'five','6':'six', '7':'seven','8':'eight','9':'nine'}  
 dict_decim = {'0': 'zero', '1': 'one','2': 'two', '3': 'three','4': 'four','5': 'five','6':'six', '7':'seven','8':'eight','9':'nine'}
-directory = input("Hello, please state your file location")
+directory = input("Hello, please state your file location - including a backslash")
 file = input("And file name? ") 
 
 txt_file_input = import_file(directory, file)
