@@ -24,7 +24,7 @@ def import_file(dir, file):
 
 #Parser: Splits text inputs by line, and checks for numbers within them. If any numbers are invalid, the whole line will be returned invalid.
 def parser(txt_string): 
-    txt_string_by_line = re.split("\r\n", txt_string)
+    txt_string_by_line = re.split("\n", txt_string)
     number_string_list =[]
     for line in txt_string_by_line:
         numbers_in_line = re.findall("[^\s]*[0-9][0-9\.\,]*",line)
