@@ -11,6 +11,7 @@
 #Import file is most straight forward - provide users opportunity to enter file directory and location.
 
 #Parser - searches for defined patterns in text. Pattern can be easily re-defined if we wanted to include numbers such as #658, £100, -100 or 100.05 for example.
+#Can change the accepted patterns here to  cope with European numbers e.g. 100,05
 
 #converter - consists of a top level number_converter into which a parsed list of strings is passed #Code then loops through this, applying the integer_converter to each list element.
 
@@ -21,5 +22,3 @@
 #commas and ands generally follows a set pattern, allowing us to easily code this in. #only exception is in the case when there is no hundreds value but last two digits are non zero. #e.g. "one thousand, one hundred and two" is correct, but "one thousand, and two" is incorrect. #Add a cleaning function which removes this comma when appropriate, as well as double spaces caused in this scenario.
 
 #alongside the integer_converter we can place additional extra functions features under number_converter #these could handle decimal places, or currencies/minus signs.
-
-#If wish to convert into different languages, only aspect of code that would need change would be in the converter section as well as new dictionaries.
